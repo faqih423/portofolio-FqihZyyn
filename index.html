@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Faqih Zayyan | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background-glow"></div>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                Faqih<span>.</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle">
+                ☰
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button id="theme-toggle" class="theme-toggle" aria-label="Ganti tema">
+                ☀️
+            </button>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+
+            <div class="hero-content reveal">
+
+                <p class="greeting">
+                    HELLO, WELCOME TO MY WEBSITE
+                </p>
+
+                <h1>
+                    Saya <span>Faqih Zayyan</span>
+                </h1>
+
+                <h2>
+                    Web Development Engineering
+                </h2>
+
+                <p class="description">
+                    Saya adalah mahasiswa Teknik Informatika yang tertarik
+                    dengan dunia teknologi, desain, dan pengembangan website.
+                    Saya senang belajar hal baru dan mengembangkan kreativitas
+                    melalui coding.
+                </p>
+
+                <!-- JAM DIGITAL -->
+                <div class="clock">
+                    <span>Indonesian Time</span>
+
+                    <strong id="clock">
+                        00:00:00
+                    </strong>
+
+                    <small id="date"></small>
+                </div>
+
+                <!-- BUTTON -->
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn primary">
+                        Lihat Project
+                    </a>
+
+                    <a href="#contact" class="btn secondary">
+                        Hubungi Saya
+                    </a>
+
+                </div>
+
+                <!-- SOCIAL MEDIA -->
+                <div class="social-links">
+
+                    <a href="https://www.instagram.com/faqih.zyyn/"
+                       target="_blank" rel="noopener noreferrer">
+                        Instagram
+                    </a>
+
+                    <a href="https://github.com/faqihzayyan"
+                       target="_blank" rel="noopener noreferrer">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.tiktok.com/@fqihzyyn_"
+                       target="_blank" rel="noopener noreferrer">
+                        TikTok
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- FOTO PROFIL -->
+            <div class="hero-image reveal">
+
+                <div class="photo-frame">
+
+                    <img
+                        src="IMG-20260611-WA0015.jpg"
+                        alt="Foto profil Faqih Zayyan"
+                        id="profile-photo"
+                        style="display: block;"
+                        onerror="
+                            this.style.display='none';
+                            document.getElementById('photo-placeholder').style.display='flex';
+                        "
+                    >
+
+                    <div
+                        id="photo-placeholder"
+                        class="photo-placeholder"
+                        style="display: none;"
+                    >
+                        FOTO PROFIL
+                    </div>
+
+                </div>
+
+                <p class="photo-caption">
+                    Creative Mind • Future Developer
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="section reveal" id="about">
+
+            <p class="section-label">
+                GET TO KNOW ME
+            </p>
+
+            <h2 class="section-title">
+                About <span>Me</span>
+            </h2>
+
+            <div class="about-card">
+
+                <p>
+                    Halo! Saya Faqih Zayyan M, mahasiswa Teknik Informatika
+                    Universitas Aisyah Pringsewu. Saat ini saya sedang
+                    mempelajari dunia pemrograman, khususnya pengembangan
+                    website. Saya memiliki semangat untuk terus belajar,
+                    mencoba hal baru, dan meningkatkan kemampuan di bidang teknologi.
+                </p>
+
+                <div class="about-info">
+
+                    <div>
+                        <span>Nama</span>
+                        <strong>Faqih Zayyan</strong>
+                    </div>
+
+                    <div>
+                        <span>Bidang</span>
+                        <strong>Teknik Informatika</strong>
+                    </div>
+
+                    <div>
+                        <span>Pendidikan</span>
+                        <strong>Universitas Aisyah Pringsewu</strong>
+                    </div>
+
+                    <div>
+                        <span>Email</span>
+                        <strong>faqihmas16@gmail.com</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="section reveal" id="skills">
+
+            <p class="section-label">
+                WHAT I LEARN
+            </p>
+
+            <h2 class="section-title">
+                My <span>Skills</span>
+            </h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div>🌐</div>
+                    <h3>HTML</h3>
+                    <p>Struktur halaman website</p>
+                </div>
+
+                <div class="skill-card">
+                    <div>🎨</div>
+                    <h3>CSS</h3>
+                    <p>Tampilan dan desain website</p>
+                </div>
+
+                <div class="skill-card">
+                    <div>⚡</div>
+                    <h3>JavaScript</h3>
+                    <p>Interaksi pada website</p>
+                </div>
+
+                <div class="skill-card">
+                    <div>💻</div>
+                    <h3>Web Development</h3>
+                    <p>Pengembangan website</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section class="section reveal" id="projects">
+
+            <p class="section-label">
+                MY RECENT WORK
+            </p>
+
+            <h2 class="section-title">
+                My <span>Projects</span>
+            </h2>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+
+                    <div class="project-icon">🖥️</div>
+
+                    <h3>Personal Portfolio</h3>
+
+                    <p>
+                        Website pribadi untuk memperkenalkan diri
+                        dan menampilkan kemampuan.
+                    </p>
+
+                    <span>HTML • CSS • JavaScript</span>
+
+                </div>
+
+                <div class="project-card">
+
+                    <div class="project-icon">🌐</div>
+
+                    <h3>Website Experiment</h3>
+
+                    <p>
+                        Eksperimen membuat tampilan website
+                        dengan desain yang menarik.
+                    </p>
+
+                    <span>HTML • CSS</span>
+
+                </div>
+
+                <div class="project-card">
+
+                    <div class="project-icon">🚀</div>
+
+                    <h3>Coming Soon</h3>
+
+                    <p>
+                        Masih banyak ide dan project baru
+                        yang sedang saya pelajari.
+                    </p>
+
+                    <span>In Progress</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section reveal" id="contact">
+
+            <p class="section-label">
+                LET'S CONNECT
+            </p>
+
+            <h2 class="section-title">
+                Contact <span>Me</span>
+            </h2>
+
+            <div class="contact-card">
+
+                <h3>
+                    Punya pertanyaan atau ingin terhubung?
+                </h3>
+
+                <p>
+                    Silakan hubungi saya melalui email atau media sosial.
+                </p>
+
+                <a class="btn primary"
+                   href="mailto:faqihmas16@gmail.com">
+                    Kirim Email
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © <span id="year"></span> Faqih Zayyan. All Rights Reserved.
+        </p>
+
+        <a href="#home">
+            Kembali ke atas ↑
+        </a>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+                                              </html>
